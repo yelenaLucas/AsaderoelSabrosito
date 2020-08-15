@@ -1,0 +1,40 @@
+.titulo {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(253, 163, 46);
+}
+
+.seccion {
+    padding: 20px;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+#contenerdorPadre {
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.contenidoTexto {
+    text-align: justify;
+}
+
+iframe.header {
+    border: none;
+    height: 100%;
+}
+
+iframe.footer {
+    border: none;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+}

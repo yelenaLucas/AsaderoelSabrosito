@@ -1,0 +1,55 @@
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+.overlay{
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility:visible;
+}
+iframe{
+    border: none;
+}
+
+.popup{
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+.inputs input{
+    margin-bottom: 16px;
+	height: 52px;
+    line-height: 52px;
+}
+
+.forgetpass a{
+    color: gray;
+}
+
+.card-header{
+    background-color: #ff7e00;
+}
+
+.cerrar{
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    display: block;
+    color: lightgray;
+}
+.cerrar:hover{
+    color: gray;
+}
+

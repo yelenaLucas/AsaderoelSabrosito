@@ -1,0 +1,53 @@
+footer {
+    border-top: 1px solid rgb(201, 199, 199);
+}
+
+.itemFonts {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+
+#principalBox {
+    padding: 15px;
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.titulos {
+    text-align: center;
+    color: rgb(253, 163, 46);
+}
+
+.contactImg {
+    width: 15px;
+    height: 15px;
+}
+
+#redesSocialesSeccion {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    border-left: 1px solid rgb(161, 161, 161);
+    border-right: 1px solid rgb(161, 161, 161);
+}
+
+#informacionItems {
+    padding: 15px;
+    justify-content: space-between;
+}
+
+#redesSocialesSeccion>img {
+    width: 35px;
+    height: 35px;
+}
+
+#copyright {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 790px) {
+    #informacionItems {
+        flex-direction: column;
+    }
+}

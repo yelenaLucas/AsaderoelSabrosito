@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuario</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./estilos/RegistrarLogin.css">
+</head>
+<body>
+        <header style="height: 90px;">
+            <iframe class="header" src="navprincipal.html" width="100%" scrolling="no"></iframe>
+        </header>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center vh-100">
+                <div class = "col-sm-8">
+                    <div class="card">
+                        <div class="titulo">REGISTRO</div>
+                        <form name="registrarse" method="post" action="" onsubmit="ValidarRegistro();">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                                      </div>
+                                    <input type="text" class="form-control"  id="nombre" placeholder="Nombres" >
+                                    <input type="text" class="form-control"  id="apellido" placeholder="Apellidos">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="sexo" name="sexo">
+                                    <option value="">Sexo</option>
+                                    <option value="Femenino">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Prefiero No Decirlo">Prefiero No Decirlo</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group mb-3" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="fecha_Nac" name="fecha_Nac" placeholder="DD/MM/YYYY">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="ciudad_nac" name="CiudadNac">
+                                    <option value="">Ciudad de Nacimiento</option>
+                                    <option value="guayaquil">Guayaquil</option>
+                                    <option value="quito">Quito</option>
+                                    <option value="cuenca">Cuenca</option>
+                                    <option value="ambato">Ambato</option>
+                                    <option value="machala">Machala</option>
+                                    <option value="manabi">Manabi</option>
+                                    <option value="santo domingo">Santo Domingo</option>
+                                    <option value="manta">Manta</option>
+                                    <option value="ibarra">Ibarra</option>
+                                    <option value="latacunga">Latacunga</option>
+                                    <option value="loja">Loja</option>
+                                    <option value="chimborazo">Chimborazo</option>
+                                    <option value="los rios">Los Rios</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="email" name="email"placeholder="example@email.com">                               
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group mb-3" >
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="create_password" placeholder="Contraseña">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="confirmar_password" placeholder="Confirmar contraseña" >
+                                </div>
+                                <label for="confirmar_contraseña">Usa al menos 8 caracteres</label>
+                            </div>
+                            <div class="center">
+                                <button type="submit" class="btn-blue">Registrarse</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <iframe class="footer"src="Footer.html" width="100%"  scrolling= "no"></iframe>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="./javascripts/ValidarDatosRegistro.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+.parentClass {
+    padding: 10px;
+}
+
+.seccionPedidos {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.seccionProductos {
+    width: 70%;
+}
+
+.seccionCarrito {
+    width: 30%;
+}
+
+iframe.header {
+    border: none;
+    height: 100%px;
+}
+
+iframe.footer {
+    border: none;
+    height: 100%;
+}
+
+.buttonSection {
+    width: 100%;
+    padding: 15px;
+}
+
+#comidas {
+    padding: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    width: 100%;
+    justify-content: center;
+}
+
+#comidas div {
+    margin: 5px;
+    width: 220px;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bebidas {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    width: 100%;
+    justify-content: center;
+    display: none;
+}
+
+#bebidas div {
+    margin: 5px;
+    width: 220px;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrito {
+    width: 90%;
+    height: 450px;
+    position: sticky;
+    top: 10px;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+div img {
+    width: 150px;
+}
+
+.nombreProducto {
+    font-size: 14px;
+}
+
+.precioProducto {
+    font-size: 15px;
+}
+
+#ordenes {
+    padding: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media only screen and (max-width: 1040px) {
+    .seccionProductos {
+        width: 800px;
+    }
+    .seccionCarrito {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .seccionPedidos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccionProductos {
+        width: 80%;
+    }
+    .seccionCarrito {
+        margin-top: 25px;
+    }
+}

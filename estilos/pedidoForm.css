@@ -1,0 +1,78 @@
+section {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+iframe {
+    border: none;
+}
+
+#pedido {
+    width: 450px;
+    height: 350px;
+    max-height: 350px;
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 229, 229);
+}
+
+.containerPedidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid rgb(224, 223, 223);
+}
+
+.nombre {
+    width: 75%;
+}
+
+.precio {
+    width: 25%;
+    text-align: end;
+}
+
+#listaItems {
+    height: 270px;
+    padding: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media only screen and (max-width: 980px) {
+    .row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,98 @@
+label.textos {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+iframe {
+    border: none;
+    height: 100%px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 90%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.contenedorPuntos {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorPuntos img {
+    width: 80%;
+    height: 200px;
+}
+
+.contenedorPuntos button {
+    width: 150px;
+}
+
+.container img:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-transform: scale(1.1);
+}
+
+.title-underline {
+    color: #ffffff;
+}
+
+.title-underline span {
+    display: inline-block;
+    background-color: #ff7e00;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+meter::-webkit-meter-bar {
+    background: #f3f3f3;
+    height: 100%;
+    width: 100%;
+}
+
+meter::-webkit-meter-bar {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF), color-stop(0.20, #eee), color-stop(0.45, #db3), color-stop(0.55, #db3));
+    border-radius: 5px;
+}
+
+.contenedorPadreCanjear {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.botonesSeccion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonesSeccion button {
+    width: 80px;
+    font-size: 15px;
+    color: white;
+}
+
+button a {
+    color: white;
+}

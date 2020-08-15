@@ -1,0 +1,25 @@
+
+.carousel-inner img {
+width: 100%;
+height: 100%;
+}
+.resume{
+width: 1000px;
+margin-top: 0px;
+display: flex;
+margin: 5px auto;
+}
+#carousel1{
+    width: 1000px;
+}
+
+iframe.header{
+    border: none;
+    height:100%;
+}
+
+iframe.footer{
+    border: none;
+    height: 100%;
+}
+

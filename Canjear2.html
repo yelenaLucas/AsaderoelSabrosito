@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./estilos/menu.css">
+
+    <link rel="stylesheet" href="estilos/EstructuradeCanjear.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+
+
+
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+    <script src="./javascripts/ValidaciondeCanjear.js"></script>
+
+    <title>ASADERO EL SABROSITO</title>
+</head>
+
+<body>
+    <header>
+        <iframe class="header" src="navprincipal.html" width="100%" scrolling="no"></iframe>
+    </header>
+    <section>
+        <div class="row text-center align-items-center">
+            <div class="col-sm-6">
+                <br>
+                <img src="./Imagenes/puntoscanjear.jpg" class="rounded mx-auto d-block" height="300px" width="300px">
+                <br>
+            </div>
+            <div class="col-sm-6">
+                <div class="container ">
+                    <form name="frmPrueba" action="" method="get" target="_self" onsubmit="validarDatos()">
+                        <div class="form-group">
+                            <br>
+                            <label for="numerodefactura" class="texto">Ingresa tu Numero de Factura:</label>
+                            <br>
+                            <input type="number" id="numerodefactura" name="numerodefactura" class="form-control" placeholder="Numero de Factura" required/>
+                            <br>
+                            <label for="montoconsumido" class="texto">Ingresa el Monto:</label>
+                            <br>
+                            <input type="number" id="montoconsumido" name="montoconsumido" class="form-control" placeholder="Monto" required/>
+                            <br>
+                        </div>
+
+                        <div class="botonesSeccion">
+                            <button type="submit" class="btn-lg" onClick="alert('¡Perfecto! Sigue Sumando Puntos')">Sellar</button>
+                            <button type="reset" class="btn-lg">Borrar</button>
+                            <button class="btn-lg" type="button"><a href="./PaginaPrincipal.html">Cancelar</a></button>
+                        </div>
+
+
+                    </form>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section>
+        <center>
+            <h2 class="title-underline">
+                <span>Sistema de Puntos</span>
+            </h2>
+        </center>
+
+        <article class="contenedorPadreCanjear">
+
+            <div class="contenedorPuntos">
+                <br>
+                <img src="Imagenes/agrandatucombo.jpeg" alt="">
+                <br>
+                <label class="textos">
+                   Junta 5 Puntos y Agrandamos Tu Combo!
+                   <br>
+                   5 PTS
+                </label>
+                <button class="btn-lg" type="button"><a href="./Cupon.html">Reclamar</a></button>
+            </div>
+
+            <div class="contenedorPuntos">
+                <br>
+                <img src="Imagenes/bebidagratis.jpg" alt="">
+                <br>
+                <label class="textos">
+                   Junta 10 Puntos y Reclama una Bebida Mediana Gratis!
+                   <br>
+                   10 PTS
+                </label>
+                <button class="btn-lg" type="button"><a href="./Cupon.html">Reclamar</a></button>
+            </div>
+
+            <div class="contenedorPuntos">
+                <br>
+                <img src="Imagenes/cuartodepollo.jpg" alt="">
+                <br>
+                <label class="textos">
+                   Junta 15 Puntos y Reclama un Cuarto de Pollo Gratis!
+                   <br>
+                   15 PTS
+                </label>
+                <button class="btn-lg" type="button"><a href="./Cupon.html">Reclamar</a></button>
+            </div>
+        </article>
+
+    </section>
+    <footer>
+        <iframe class="footer" src="Footer.html" width="100%" scrolling="no"></iframe>
+    </footer>
+
+</body>
+
+</html>
